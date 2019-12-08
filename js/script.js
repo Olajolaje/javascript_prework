@@ -55,7 +55,9 @@ function buttonClicked(argButtonName) {
     playerMove = 'nieznany ruch';
   }
   printMessage('Twój ruch: ' + playerMove);
+  displayResult('kamień', 'papier', 'nożyce');
 }
+
 /**
 * Wyświetlanie wyniku
 */
@@ -84,7 +86,6 @@ function displayResult(argPlayerMove, argComputerMove) {
     printMessage('Remis');
   }
 }
-displayResult();
 /**
 * Powiązania guzików z funkcją buttonClick
 */
