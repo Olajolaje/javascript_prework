@@ -3,17 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="sass/style.scss">
 </head>
 <body>
 	<div class="container">
-		<div id="buttons">
-			<button id="button-rock">Kamień</button>
-			<button id="button-paper">Papier</button>
-			<button id="button-scissors">Nożyce</button>
+		<h1>Zagramy?</h2>
+			<div id="buttons">
+				<button id="button-rock">Kamień</button>
+				<button id="button-paper">Papier</button>
+				<button id="button-scissors">Nożyce</button>
+				<button id="button-wynik" click="buttonClicked()">Wynik</button>
+			</div>
+			<div id="messages" click="buttonClicked()"></div>
 		</div>
-		<div id="messages"></div>
-		<div id="button-test"></div>
+
 	</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>

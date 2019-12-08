@@ -1,0 +1,74 @@
+*, *::before, *::after {
+        box-sizing: border-box;
+}
+.container {
+  width: 800px;
+  min-width: 300px;
+  min-height: 100px;
+  max-width: 100%;
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 10px solid #005F6A;
+  padding: 150px 150px;
+  border-radius: 50px;
+}
+.container:hover {
+  background-color: #7da4a7;
+  border-color: #7da4a7;
+  color: #fff;
+}
+h1 {
+  color: #005F6A;
+  font-family: sans-serif;
+  margin: 40px;
+}
+h1:hover {
+  color: #fff;
+}
+#buttons {
+  text-align: center;
+}
+#button-rock, #button-paper, #button-scissors {
+  padding: 10px 50px;
+  margin: auto;
+  max-width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  color: #fff;
+  background-color: #005F6A;
+  border: 2px solid #005F6A;
+  border-radius: 50px;
+}
+#button-rock:hover, #button-paper:hover, #button-scissors:hover {
+  background-color: #fff;
+  color: #005F6A;
+  border: none;
+}
+#button-wynik {
+  margin: 20px;
+  padding: 10px 50px;
+  max-width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  border: 2px solid #005F6A;
+  color: #005F6A;
+  background-color: #fff;
+  border-radius: 50px;
+}
+#button-wynik:hover {
+  background-color: #005F6A;;
+  border: none;
+  color: #fff;
+}
+#messages {
+  margin: 20px;
+  color: #005F6A;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
