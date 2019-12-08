@@ -55,9 +55,8 @@ function buttonClicked(argButtonName) {
     playerMove = 'nieznany ruch';
   }
   printMessage('Twój ruch: ' + playerMove);
-  displayResult('kamień', 'papier', 'nożyce');
+  displayResult(playerMove, computerMove);
 }
-
 /**
 * Wyświetlanie wyniku
 */
