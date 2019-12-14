@@ -3,21 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
-	<link rel="stylesheet" href="sass/style.scss">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
-		<h1>Zagramy?</h2>
-			<div id="buttons">
-				<button id="button-rock">Kamień</button>
-				<button id="button-paper">Papier</button>
-				<button id="button-scissors">Nożyce</button>
-				<button id="button-wynik" click="displayResult()">Wynik</button>
-			</div>
-			<div id="messages" click="buttonClicked()"></div>
+		<h2>Kamień, papier, nożyce</h2>
+		<div id="buttons">
+			<button id="button-rock"><i class="far fa-gem fa-2x"></i></button>
+			<button id="button-paper"><i class="far fa-sticky-note fa-2x"></i></button>
+			<button id="button-scissors"><i class="fas fa-cut fa-2x"></i></button>
 		</div>
+		<div id="messages" click="buttonClicked()"></div>
 	</div>
-	<script src="js/functions.js"></script>
-	<script src="js/script.js"></script>
+</div>
+<script src="js/functions.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

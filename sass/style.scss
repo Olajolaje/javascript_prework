@@ -1,5 +1,5 @@
 *, *::before, *::after {
-        box-sizing: border-box;
+  box-sizing: border-box;
 }
 .container {
   width: 800px;
@@ -19,21 +19,31 @@
   border-color: #7da4a7;
   color: #fff;
 }
-h1 {
+h2 {
   color: #005F6A;
   font-family: sans-serif;
   margin: 40px;
+  transition: all 1s;
 }
-h1:hover {
+h2:hover {
   color: #fff;
 }
 #buttons {
   text-align: center;
 }
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 #button-rock, #button-paper, #button-scissors {
   padding: 10px 50px;
   margin: auto;
   max-width: 100%;
+  height: 70px;
   font-size: 15px;
   font-weight: 700;
   text-align: center;
@@ -42,28 +52,24 @@ h1:hover {
   background-color: #005F6A;
   border: 2px solid #005F6A;
   border-radius: 50px;
+  transition: all 1s;
+}
+#button-rock {
+  animation-name: show;
+  animation-duration: 3s;
+}
+#button-paper {
+  animation-name: show;
+  animation-duration: 7s;
+}
+#button-scissors{
+  animation-name: show;
+  animation-duration: 10s;
 }
 #button-rock:hover, #button-paper:hover, #button-scissors:hover {
   background-color: #fff;
   color: #005F6A;
   border: none;
-}
-#button-wynik {
-  margin: 20px;
-  padding: 10px 50px;
-  max-width: 100%;
-  font-size: 15px;
-  font-weight: 700;
-  white-space: nowrap;
-  border: 2px solid #005F6A;
-  color: #005F6A;
-  background-color: #fff;
-  border-radius: 50px;
-}
-#button-wynik:hover {
-  background-color: #005F6A;;
-  border: none;
-  color: #fff;
 }
 #messages {
   margin: 20px;

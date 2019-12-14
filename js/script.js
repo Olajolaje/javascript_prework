@@ -60,29 +60,26 @@ function buttonClicked(argButtonName) {
 /**
 * Wyświetlanie wyniku
 */
-let buttonWynik;
-buttonWynik = document.getElementById('button-wynik');
-
 function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
-    printMessage('Wygrywasz!');
+    printMessage('Wygrywasz :)');
   } else if (argPlayerMove == 'nożyce' && argComputerMove == 'kamień') {
-    printMessage('Przegrywasz :()');
+    printMessage('Przegrywasz :(');
   } else if (argPlayerMove == 'kamień' && argComputerMove =='kamień') {
-    printMessage('Remis!');
+    printMessage('Remis :/');
   } else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {
-    printMessage('Wygrywasz!');
+    printMessage('Wygrywasz :)');
   } else if (argPlayerMove == 'kamień' && argComputerMove == 'papier') {
-    printMessage('Przegrywasz :()');
+    printMessage('Przegrywasz :(');
   } else if (argPlayerMove == 'papier' && argComputerMove == 'papier') {
-    printMessage('Remis!');
+    printMessage('Remis :/');
   } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
-    printMessage('Wygrywasz!');
+    printMessage('Wygrywasz :)');
   } else if (argPlayerMove == 'papier' && argComputerMove == 'nożyce') {
-    printMessage ('Przegrywasz :()');
+    printMessage ('Przegrywasz :(');
   } else if (argPlayerMove == 'nożyce' && argComputerMove == 'nożyce') {
-    printMessage('Remis');
+    printMessage('Remis :/');
   }
 }
 /**
